@@ -573,7 +573,7 @@ Resources:
         "--redshift_schema": !Ref Schema
         "--redshift_connection": !Join ["_", [!Ref GluePrefix, "redshift_conn"]]
         "--root_table": !Ref Table
-        "--num_level_to_denormalize": 0
+        "--num_level_to_denormalize": 2
         "--num_output_files": 4
         "--keep_table_prefix": False
         "--target_repo": "all"
